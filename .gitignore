@@ -34,7 +34,6 @@ yarn-error.log*
 
 # Build directories
 build/
-dist/
 
 # IDE specific files
 .vscode/
