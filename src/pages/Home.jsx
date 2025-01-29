@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 
 const Home = () => {
@@ -24,44 +25,82 @@ const Home = () => {
       name: 'Lechon Kawali', 
       description: 'Crispy deep-fried pork belly served with liver sauce', 
       price: 350, 
-      image: '/images/lechon.jpg' 
+      image: '/images/lechon-kawali.jpg' 
     }
   ];
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold text-primary mb-8 text-center">
-        Welcome to Panlasang Pinoy
-      </h1>
-      
-      <section className="grid md:grid-cols-3 gap-6">
-        {featuredDishes.map((dish) => (
-          <div 
-            key={dish.id} 
-            className="bg-white rounded-lg shadow-md overflow-hidden transform transition-all hover:scale-105"
-          >
-            <img 
-              src={dish.image} 
-              alt={dish.name} 
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-4">
-              <h2 className="text-xl font-semibold text-primary">{dish.name}</h2>
-              <p className="text-gray-600 mt-2">{dish.description}</p>
-              <div className="flex justify-between items-center mt-4">
-                <span className="text-lg font-bold text-secondary">
-                  ₱{dish.price}
-                </span>
-                <button 
-                  onClick={() => addToCart(dish)} 
-                  className="btn-primary"
-                >
-                  Add to Cart
-                </button>
-              </div>
-            </div>
+    <div className="space-y-12">
+      {/* Hero Section */}
+      <div className="relative h-[600px] rounded-xl overflow-hidden bg-hero-pattern bg-cover bg-center bg-fixed">
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="text-center text-white space-y-6 px-4 animate-fade-in">
+            <h1 className="text-5xl md:text-6xl font-bold">Authentic Filipino Cuisine</h1>
+            <p className="text-xl md:text-2xl">Experience the taste of home-cooked Filipino dishes</p>
+            <Link 
+              to="/menu" 
+              className="btn-primary inline-block mt-4 text-lg px-8 py-3 hover:scale-105"
+            >
+              View Our Menu
+            </Link>
           </div>
-        ))}
+        </div>
+      </div>
+
+      {/* Featured Dishes */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center text-primary mb-12">Featured Dishes</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {featuredDishes.map((dish) => (
+              <div 
+                key={dish.id} 
+                className="bg-white rounded-lg shadow-md overflow-hidden transform transition-all hover:scale-105"
+              >
+                <img 
+                  src={dish.image} 
+                  alt={dish.name} 
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-4">
+                  <h2 className="text-xl font-semibold text-primary">{dish.name}</h2>
+                  <p className="text-gray-600 mt-2">{dish.description}</p>
+                  <div className="flex justify-between items-center mt-4">
+                    <span className="text-lg font-bold text-secondary">
+                      ₱{dish.price}
+                    </span>
+                    <button 
+                      onClick={() => addToCart(dish)} 
+                      className="btn-primary"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section className="py-16 bg-menu-pattern text-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-4xl font-bold mb-6">Our Story</h2>
+            <p className="text-lg leading-relaxed">
+              Welcome to Panlasang Pinoy, where we bring the authentic taste of Filipino home cooking to your table. 
+              Our dishes are prepared with traditional recipes passed down through generations, using fresh, local ingredients 
+              to create the perfect blend of flavors that Filipino cuisine is known for.
+            </p>
+            <Link 
+              to="/menu" 
+              className="btn-secondary inline-block mt-8 hover:scale-105 transform transition-transform duration-300"
+            >
+              Explore Our Menu
+            </Link>
+          </div>
+        </div>
       </section>
     </div>
   );
