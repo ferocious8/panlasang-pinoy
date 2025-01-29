@@ -7,91 +7,91 @@ const menuItems = [
     category: 'Main Dishes',
     price: 250,
     description: 'Chicken marinated in vinegar, soy sauce, and garlic',
-    image: '/images/adobo.jpg'
+    image: '/panlasang-pinoy/images/adobo.jpg'
   },
   {
     name: 'Sinigang na Baboy',
     category: 'Soups',
     price: 280,
     description: 'Pork in sour tamarind soup with vegetables',
-    image: '/images/sinigang.jpg'
+    image: '/panlasang-pinoy/images/sinigang.jpg'
   },
   {
     name: 'Lechon Kawali',
     category: 'Main Dishes',
     price: 320,
     description: 'Crispy deep-fried pork belly served with lechon sauce',
-    image: '/images/lechon-kawali.jpg'
+    image: '/panlasang-pinoy/images/lechon-kawali.jpg'
   },
   {
     name: 'Pancit Bihon',
     category: 'Main Dishes',
     price: 220,
     description: 'Stir-fried rice noodles with vegetables and meat',
-    image: '/images/pancit.jpg'
+    image: '/panlasang-pinoy/images/pancit.jpg'
   },
   {
     name: 'Halo-Halo',
     category: 'Desserts',
     price: 150,
     description: 'Mixed sweet beans, fruits, and shaved ice with ube ice cream',
-    image: '/images/halo-halo.jpg'
+    image: '/panlasang-pinoy/images/halo-halo.jpg'
   },
   {
     name: 'Puto Bumbong',
     category: 'Desserts',
     price: 120,
     description: 'Purple rice cake steamed in bamboo tubes, served with butter, grated coconut, and muscovado sugar',
-    image: '/images/puto-bumbong.jpg'
+    image: '/panlasang-pinoy/images/puto-bumbong.jpg'
   },
   {
     name: 'Buko Pandan',
     category: 'Desserts',
     price: 130,
     description: 'Young coconut strips and pandan-flavored gelatin in sweet cream, a refreshing Filipino dessert',
-    image: '/images/buko-pandan.jpg'
+    image: '/panlasang-pinoy/images/buko-pandan.jpg'
   },
   {
     name: 'Leche Flan',
     category: 'Desserts',
     price: 100,
     description: 'Smooth and creamy Filipino-style caramel custard made with egg yolks and milk',
-    image: '/images/leche-flan.jpg'
+    image: '/panlasang-pinoy/images/leche-flan.jpg'
   },
   {
     name: 'Bulalo',
     category: 'Soups',
     price: 380,
     description: 'Beef marrow soup with vegetables',
-    image: '/images/bulalo.jpg'
+    image: '/panlasang-pinoy/images/bulalo.jpg'
   },
   {
     name: 'Water',
     category: 'Beverages',
     price: 25,
     description: 'Refreshing mineral water',
-    image: '/images/water.jpg'
+    image: '/panlasang-pinoy/images/water.jpg'
   },
   {
     name: 'Coke',
     category: 'Beverages',
     price: 45,
     description: 'Classic Coca-Cola soft drink',
-    image: '/images/coke.jpg'
+    image: '/panlasang-pinoy/images/coke.jpg'
   },
   {
     name: 'Mountain Dew',
     category: 'Beverages',
     price: 45,
     description: 'Citrus-flavored carbonated soft drink',
-    image: '/images/mountain-dew.jpg'
+    image: '/panlasang-pinoy/images/mountain-dew.jpg'
   },
   {
     name: 'Sprite',
     category: 'Beverages',
     price: 45,
     description: 'Lemon-lime flavored soft drink',
-    image: '/images/sprite.jpg'
+    image: '/panlasang-pinoy/images/sprite.jpg'
   }
 ];
 
