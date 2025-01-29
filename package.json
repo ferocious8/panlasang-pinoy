@@ -9,6 +9,8 @@
     "preview:client": "vite preview",
     "start:server": "node server/server.js",
     "dev:server": "nodemon server/server.js",
+    "build": "vite build && npm run build:server",
+    "build:server": "echo 'Server build completed'",
     "start": "concurrently \"npm run start:server\" \"npm run dev:client\""
   },
   "dependencies": {
