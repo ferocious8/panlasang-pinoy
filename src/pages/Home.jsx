@@ -11,21 +11,21 @@ const Home = () => {
       name: 'Chicken Adobo', 
       description: 'Classic Filipino dish with tender chicken in a savory soy-vinegar sauce', 
       price: 250, 
-      image: '/images/adobo.jpg' 
+      image: '/panlasang-pinoy/images/adobo.jpg' 
     },
     { 
       id: 2, 
       name: 'Sinigang na Baboy', 
       description: 'Hearty pork soup with tamarind and vegetables', 
       price: 300, 
-      image: '/images/sinigang.jpg' 
+      image: '/panlasang-pinoy/images/sinigang.jpg' 
     },
     { 
       id: 3, 
       name: 'Lechon Kawali', 
       description: 'Crispy deep-fried pork belly served with liver sauce', 
       price: 350, 
-      image: '/images/lechon-kawali.jpg' 
+      image: '/panlasang-pinoy/images/lechon-kawali.jpg' 
     }
   ];
 
